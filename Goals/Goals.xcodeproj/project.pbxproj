@@ -23,6 +23,8 @@
 		C84333BF2605737100FE2185 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84333BE2605737100FE2185 /* UIViewExt.swift */; };
 		C84333C4260573B800FE2185 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84333C3260573B800FE2185 /* UIButtonExtension.swift */; };
 		C84333C9260573DC00FE2185 /* DeletedGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84333C8260573DC00FE2185 /* DeletedGoal.swift */; };
+		C84333CE260575A000FE2185 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84333CD260575A000FE2185 /* GoalCell.swift */; };
+		C84333D3260575E400FE2185 /* roundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84333D2260575E400FE2185 /* roundLabel.swift */; };
 		EB50B8A0D124B532ECC90CFB /* Pods_Goals_GoalsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15173FF2807085770CC85A43 /* Pods_Goals_GoalsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		C84333BE2605737100FE2185 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		C84333C3260573B800FE2185 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		C84333C8260573DC00FE2185 /* DeletedGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletedGoal.swift; sourceTree = "<group>"; };
+		C84333CD260575A000FE2185 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		C84333D2260575E400FE2185 /* roundLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundLabel.swift; sourceTree = "<group>"; };
 		D4ECA0E86BFC2B504361D9B9 /* Pods-Goals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goals.release.xcconfig"; path = "Target Support Files/Pods-Goals/Pods-Goals.release.xcconfig"; sourceTree = "<group>"; };
 		F205A237FD94B0D7676F6DFD /* Pods-Goals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goals.debug.xcconfig"; path = "Target Support Files/Pods-Goals/Pods-Goals.debug.xcconfig"; sourceTree = "<group>"; };
 		F2679037DB53D4C0DC1E9F84 /* Pods-GoalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoalsTests.debug.xcconfig"; path = "Target Support Files/Pods-GoalsTests/Pods-GoalsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +207,8 @@
 			children = (
 				C843336126056F9600FE2185 /* Main.storyboard */,
 				C843336626056F9700FE2185 /* LaunchScreen.storyboard */,
+				C84333CD260575A000FE2185 /* GoalCell.swift */,
+				C84333D2260575E400FE2185 /* roundLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -436,7 +442,9 @@
 				C84333B22605726A00FE2185 /* GoalTableView.swift in Sources */,
 				C84333AA260571E400FE2185 /* Enums.swift in Sources */,
 				C843335E26056F9600FE2185 /* SceneDelegate.swift in Sources */,
+				C84333CE260575A000FE2185 /* GoalCell.swift in Sources */,
 				C84333C9260573DC00FE2185 /* DeletedGoal.swift in Sources */,
+				C84333D3260575E400FE2185 /* roundLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
