@@ -7,6 +7,14 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
+@available(iOS 13.0, *)
+@available(iOS 13.0, *)
+@available(iOS 13.0, *)
+@available(iOS 13.0, *)
+@available(iOS 13.0, *)
+@available(iOS 13.0, *)
+@available(iOS 13.0, *)
 class FinishGoal: UIViewController,UITextFieldDelegate {
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
     

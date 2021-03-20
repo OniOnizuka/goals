@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 
+@available(iOS 13.0, *)
 class GoalVC: UIViewController {
     var goals:[Goal] = []
     var goalsUndo:[DeletedGoal] = []
@@ -89,6 +90,7 @@ class GoalVC: UIViewController {
 
 
 
+@available(iOS 13.0, *)
 extension GoalVC {
     func setProgress(AtIndexPath:IndexPath)
     {
