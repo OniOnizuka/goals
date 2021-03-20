@@ -11,7 +11,7 @@
 		C7B795F23332F9FE55A6067E /* Pods_Goals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BB1647CEC52DDFD319342A /* Pods_Goals.framework */; };
 		C843335C26056F9600FE2185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C843335B26056F9600FE2185 /* AppDelegate.swift */; };
 		C843335E26056F9600FE2185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C843335D26056F9600FE2185 /* SceneDelegate.swift */; };
-		C843336026056F9600FE2185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C843335F26056F9600FE2185 /* ViewController.swift */; };
+		C843336026056F9600FE2185 /* GoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C843335F26056F9600FE2185 /* GoalVC.swift */; };
 		C843336326056F9600FE2185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C843336126056F9600FE2185 /* Main.storyboard */; };
 		C843336526056F9700FE2185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C843336426056F9700FE2185 /* Assets.xcassets */; };
 		C843336826056F9700FE2185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C843336626056F9700FE2185 /* LaunchScreen.storyboard */; };
@@ -25,6 +25,8 @@
 		C84333C9260573DC00FE2185 /* DeletedGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84333C8260573DC00FE2185 /* DeletedGoal.swift */; };
 		C84333CE260575A000FE2185 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84333CD260575A000FE2185 /* GoalCell.swift */; };
 		C84333D3260575E400FE2185 /* roundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84333D2260575E400FE2185 /* roundLabel.swift */; };
+		C84333D82605769200FE2185 /* AddingGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84333D72605769200FE2185 /* AddingGoals.swift */; };
+		C84333E0260576CC00FE2185 /* FinishingGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84333DF260576CC00FE2185 /* FinishingGoals.swift */; };
 		EB50B8A0D124B532ECC90CFB /* Pods_Goals_GoalsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15173FF2807085770CC85A43 /* Pods_Goals_GoalsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +57,7 @@
 		C843335826056F9600FE2185 /* Goals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C843335B26056F9600FE2185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C843335D26056F9600FE2185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C843335F26056F9600FE2185 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C843335F26056F9600FE2185 /* GoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalVC.swift; sourceTree = "<group>"; };
 		C843336226056F9600FE2185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C843336426056F9700FE2185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C843336726056F9700FE2185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +76,8 @@
 		C84333C8260573DC00FE2185 /* DeletedGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletedGoal.swift; sourceTree = "<group>"; };
 		C84333CD260575A000FE2185 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		C84333D2260575E400FE2185 /* roundLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundLabel.swift; sourceTree = "<group>"; };
+		C84333D72605769200FE2185 /* AddingGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingGoals.swift; sourceTree = "<group>"; };
+		C84333DF260576CC00FE2185 /* FinishingGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishingGoals.swift; sourceTree = "<group>"; };
 		D4ECA0E86BFC2B504361D9B9 /* Pods-Goals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goals.release.xcconfig"; path = "Target Support Files/Pods-Goals/Pods-Goals.release.xcconfig"; sourceTree = "<group>"; };
 		F205A237FD94B0D7676F6DFD /* Pods-Goals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goals.debug.xcconfig"; path = "Target Support Files/Pods-Goals/Pods-Goals.debug.xcconfig"; sourceTree = "<group>"; };
 		F2679037DB53D4C0DC1E9F84 /* Pods-GoalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoalsTests.debug.xcconfig"; path = "Target Support Files/Pods-GoalsTests/Pods-GoalsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -216,7 +220,9 @@
 		C84333A12605710400FE2185 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C843335F26056F9600FE2185 /* ViewController.swift */,
+				C843335F26056F9600FE2185 /* GoalVC.swift */,
+				C84333D72605769200FE2185 /* AddingGoals.swift */,
+				C84333DF260576CC00FE2185 /* FinishingGoals.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -436,10 +442,12 @@
 			files = (
 				C84333BF2605737100FE2185 /* UIViewExt.swift in Sources */,
 				C84333C4260573B800FE2185 /* UIButtonExtension.swift in Sources */,
-				C843336026056F9600FE2185 /* ViewController.swift in Sources */,
+				C843336026056F9600FE2185 /* GoalVC.swift in Sources */,
 				C84333B7260572A100FE2185 /* Ext+ViewController.swift in Sources */,
 				C843335C26056F9600FE2185 /* AppDelegate.swift in Sources */,
+				C84333D82605769200FE2185 /* AddingGoals.swift in Sources */,
 				C84333B22605726A00FE2185 /* GoalTableView.swift in Sources */,
+				C84333E0260576CC00FE2185 /* FinishingGoals.swift in Sources */,
 				C84333AA260571E400FE2185 /* Enums.swift in Sources */,
 				C843335E26056F9600FE2185 /* SceneDelegate.swift in Sources */,
 				C84333CE260575A000FE2185 /* GoalCell.swift in Sources */,
