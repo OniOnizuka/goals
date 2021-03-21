@@ -16,10 +16,12 @@ class CreateGoalViewController: UIViewController, UITextFieldDelegate {
     
     var goalDescription: String!
     var goalType: GoalType!
+    var alertMessage = AddGoalViewController()
     
     func initData(description: String, type: GoalType) {
         self.goalDescription = description
         self.goalType = type
+     
     }
     
     override func viewDidLoad() {
@@ -28,6 +30,15 @@ class CreateGoalViewController: UIViewController, UITextFieldDelegate {
         createGoalBtn.bindToKeyboard()
         pointsTextField.delegate = self
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        pointsTextField.becomeFirstResponder()
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        pointsTextField.resignFirstResponder()
+    }
+    
     @IBAction func createGoalBtnWasPressed(_ sender: Any) {
         if pointsTextField.text != "" {
             self.save { (complete) in

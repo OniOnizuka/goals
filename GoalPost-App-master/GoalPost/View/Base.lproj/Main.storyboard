@@ -323,7 +323,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUu-7F-fGI">
-                                <rect key="frame" x="0.0" y="752" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="670" width="375" height="60"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="0ss-Gy-u8y"/>
@@ -340,7 +340,7 @@
                         <viewLayoutGuide key="safeArea" id="LUh-Tc-mvm"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="LF8-nA-qC8" secondAttribute="trailing" id="1ZA-RM-HUm"/>
-                            <constraint firstAttribute="bottom" secondItem="IUu-7F-fGI" secondAttribute="bottom" id="3yJ-Z1-GWM"/>
+                            <constraint firstAttribute="bottom" secondItem="IUu-7F-fGI" secondAttribute="bottom" constant="82" id="3yJ-Z1-GWM"/>
                             <constraint firstItem="KDd-ZF-zOE" firstAttribute="leading" secondItem="LUh-Tc-mvm" secondAttribute="leading" constant="20" id="4dw-jq-Mqi"/>
                             <constraint firstItem="LF8-nA-qC8" firstAttribute="top" secondItem="9XZ-Oi-Z47" secondAttribute="top" id="P6w-eh-S78"/>
                             <constraint firstItem="b93-HC-BTc" firstAttribute="top" secondItem="LF8-nA-qC8" secondAttribute="bottom" constant="15" id="Vm9-U0-YdG"/>
@@ -441,7 +441,7 @@
                                 <rect key="frame" x="0.0" y="265" width="375" height="547"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAS-IV-jQV">
-                                        <rect key="frame" x="0.0" y="487" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="405" width="375" height="60"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="LFp-7C-rJm"/>
@@ -456,7 +456,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="iAS-IV-jQV" secondAttribute="bottom" id="Pdq-Ad-9wU"/>
+                                    <constraint firstAttribute="bottom" secondItem="iAS-IV-jQV" secondAttribute="bottom" constant="82" id="Pdq-Ad-9wU"/>
                                     <constraint firstAttribute="trailing" secondItem="iAS-IV-jQV" secondAttribute="trailing" id="bH1-1E-NDz"/>
                                     <constraint firstItem="iAS-IV-jQV" firstAttribute="leading" secondItem="eXE-VU-s3P" secondAttribute="leading" id="rXB-2H-xku"/>
                                 </constraints>
@@ -486,6 +486,7 @@
             <point key="canvasLocation" x="1557.5999999999999" y="116.74876847290641"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="addGoal" width="35" height="32"/>
         <image name="back" width="14" height="25"/>

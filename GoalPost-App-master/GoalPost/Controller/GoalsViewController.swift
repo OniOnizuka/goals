@@ -97,11 +97,16 @@ extension GoalsViewController: UITableViewDelegate, UITableViewDataSource {
             tableView.reloadRows(at: [indexPath], with: .automatic)
             tableView.reloadData()
         }
-        
+        let contextChangeItem = UIContextualAction(style: .normal, title: "Change Goal") { (contextualAction, view, boolValue) in
+            self.changeGoal(atIndexPath: indexPath)
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+            tableView.reloadData()
+        }
         contextItem.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 0.952349101)
         contextProgressItem.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+        contextChangeItem.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
         //let deleteAction = UISwipeActionsConfiguration(actions: [contextItem])
-        let actions = UISwipeActionsConfiguration(actions: [contextItem,contextProgressItem])
+        let actions = UISwipeActionsConfiguration(actions: [contextItem,contextProgressItem,contextChangeItem])
         
         return actions
     }
@@ -133,6 +138,21 @@ extension GoalsViewController {
         } catch{
             debugPrint("Couldn't remove: \(error.localizedDescription)")
         }
+    }
+    
+    func changeGoal(atIndexPath indexPath: IndexPath){
+//        guard let managedContext = appDelegate?.persistentContainer.viewContext else {return}
+        let chosenGoal = goals[indexPath.row]
+        guard let addGoalViewController = self.storyboard?.instantiateViewController(withIdentifier: "AddGoalViewController") as? AddGoalViewController
+            else {
+                return
+        }
+        addGoalViewController.goal = chosenGoal
+        //to switch default annoying card-view to fullscreen-view
+        //using a segue programmatically
+        addGoalViewController.modalPresentationStyle = .fullScreen
+        self.presentDetail(addGoalViewController)
+       
     }
     
     func fetch(completion: (_ complete: Bool) -> ()) {
